@@ -8,7 +8,6 @@ import About from "../UI/About";
 export type Re = {
     path: string,
     exact: boolean,
-    
     component: any,
     name: string,
     protected: boolean
@@ -33,7 +32,7 @@ const routes: IRoute[] = [
         path: '/auth/signup',
         exact: true,
         component: SignUpPage,
-        name: 'Login Page',
+        name: 'SignUpPage',
         protected: false
     },
     {

@@ -10,6 +10,7 @@ const AuthRoute: React.FunctionComponent<IAuthRouteProps> = props => {
     const { children } = props;
 
     // auth,currentuser provides the firebase.User object if authenticated. 
+    console.log(auth.currentUser,'auth')
     if (!auth.currentUser) {
         return <Redirect to="/auth/signup" />;
     }
